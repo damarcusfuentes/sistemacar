@@ -1,50 +1,40 @@
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style type="text/css">
  
 
-</style>>
+</style>
+<style>  
+
+.color{
+background-color:Blue;
+
+color:#fff;
+}
+
+</style>
 
 
  <title>Datos personales del atleta</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   
 </head>
 <body>
 
-
- <nav class="navbar navbar-default">
-        <div class="container-fluid">
-
-            <!-- Logo -->
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand">PLATAFORMA INDE</a>
-            </div>
-
-            <!-- Menu Items -->
-            <div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">INICIO</a></li>
-                    <li><a href="#">ATLETAS</a></li>
-                    <li><a href="#">AREA.TECNICA</a></li>
-                      <li><a href="#">AREA.MEDICA</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
-
-
+ <?php include('base.php'); ?>
+ 
+<section class="container  color  mt-1 pt-1">
 
 <div class="form-group row">
   <label for="example-text-input" class="col-2 col-form-label">Text</label>
-  <div class="col-5">
+  <div class="col-sm-5">
     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
   </div>
 </div>
@@ -115,7 +105,7 @@
   </div>
 </div>
 
-
+</section>
 
 
 </body>
