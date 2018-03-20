@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>ADMINISTRADOR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+</head>
+
+
+<body  >
+ <nav class="navbar navbar-dark bg-primary">
+ <div class="container-fluid">
+<div  class="navbar-header">
+
+      <button type="button" style="background:gray" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar" style="background:white"></span>
+        <span class="icon-bar" style="background:white"></span>
+        <span class="icon-bar" style="background:white"></span>                        
+      </button>
+
+<img src="img/logo.png" width="180" height="50" class="d-inline-block align-top"><a class="navbar-brand" ><font color="black" href="inicioatleta.html">SISTEMA CAR</font>
+  </a>
+
+</div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+	 <ul class="nav navbar-nav">
+        <li class="dropdown">
+		<a href="inicioatleta.html"><font color="black">INICIO</font></a></li>
+		
+		 <li class="dropdown">
+          <a   href="login.html"><font color="black">ADMINISTRAR USUARIOS</font></a>
+		</li>
+		
+        <li class="dropdown">
+          <a  href="#"><font color="black">ATLETAS</font></a>
+         
+        </li>
+
+		 <li class="dropdown">
+          <a  href="#"><font color="black">AREA.TECNICA</font></a>
+        </li>
+       
+	   
+	    <li class="dropdown">
+         <a  href="#"><font color="black">AREA.MEDICA</font></a>
+        </li>
+		
+      </ul>
+	
+      <ul class="nav navbar-nav navbar-right">
+	   <li class="dropdown">
+		<a href="login.html" type="button" class="btn btn-danger btn-sm" align="center" >
+        <font color="black" ><span class="glyphicon glyphicon-log-out"></span> CERRAR SESION</font>
+        </a>
+   </li>
+   </ul>
+    </div>
+  </div>
+</nav>
+<br>
+
+ 
+
+  <div id="formulario">
+   <form role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
+   <label for="nombre">Nombre</label>
+   <input name="nombre" type="text" required="required" id="nombre" placeholder="nombre" tabindex="1" title="Nombre">
+   <br>
+   <label for="email">Email</label>
+   <input name="email" type="email" required="required" id="email" placeholder="email" tabindex="2" title="Email">
+   <br>
+   <label for="telefono">Teléfono</label>
+   <input name="telefono" type="text" id="telefono" placeholder="telefono" tabindex="3" title="Telefono">
+   <br>
+   <label for="ciudad">Ciudad</label>
+   <input name="ciudad" type="text" id="ciudad" placeholder="ciudad" tabindex="4" title="ciudad">
+   <br>
+   <label for="pais">País</label>
+   <input name="pais" type="pais" id="pais" placeholder="pais" tabindex="5" title="pais">
+   <br>
+   <label for="Mensaje">Mensaje</label>
+   <textarea name="mensaje" rows="4" id="mensaje" placeholder="mensaje" tabindex="6"></textarea>
+   <br>
+   <input type="submit" name="enviar" tabindex="7" value="Enviar"><input type="reset" tabindex="8" value="Borrar">
+   <input type="hidden" name="estado" value="1">
+   </form>
+  </div>
+
+
+<br>
+</body>
+</html>
